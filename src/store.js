@@ -7,12 +7,12 @@ import settingsReducer from "./reducers/settingsReducer";
 import "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC-UqT903UqyLCL54zvvNs2V6Vox7CCmas",
-  authDomain: "react-redux-clientmanager.firebaseapp.com",
-  databaseURL: "https://react-redux-clientmanager.firebaseio.com",
-  projectId: "react-redux-clientmanager",
-  storageBucket: "react-redux-clientmanager.appspot.com",
-  messagingSenderId: "693461818903"
+  apiKey: process.env.REACT_APP_FIREBASE_CONFIG_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_CONFIG_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_CONFIG_DATABASE_URL,
+  projectId: process.env.REACT_APP_FIREBASE_CONFIG_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_CONFIG_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_CONFIG_MESSAGING_SENDER_ID
 };
 
 const rrfConfig = {
